@@ -1,0 +1,18 @@
+
+<div class="content">
+	<div class="messageDiv">
+		{% block content %}
+		<form action="./chat-test" method="POST">
+			<div class="input-group">
+				<input id="name" name="name" type="text" class="form-control" placeholder="메모할 내용을 적어주세요">
+
+				<input id="content" name="content" type="text"class="form-control"/>
+				<span class="input-group-btn">
+					<button class="btn btn-danger" type="submit">등록하기</button>
+				</span>
+			</div>
+		</form>
+		{% endblock %}
+	</div>
+</div>
+
